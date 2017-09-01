@@ -3,10 +3,19 @@
         <h1>List of Books</h1>
     </header>
     <section>
-        <div ng-repeat="book in books | filter: {title:searchText}">
-            <a href="#/{{book.title}}">{{book.title}}</a>
-            <h6>{{book.type}}</h6>
-            <h8>{{book.price}}</h8>
+        <div >
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                </tr>
+                <tr ng-repeat="book in books | filter: {title:searchText}">
+                    <td><a href="#/{{book.title}}">{{book.title}}</a></td>
+                    <td><h6>{{book.type}}</h6></td>
+                    <td> <h8>{{book.price}}</h8></td>
+                </tr>
+            </table>
         </div>
     </section>
 </article>

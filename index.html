@@ -9,18 +9,15 @@
 <h1>Travelin'</h1>
 <label>Search: <input ng-model="searchText"><br/><br/></label>
 
-<label>
+    <div ng-view></div>
 
-    <div ng-include="'partials/show-all.html'"></div>
-
-</label>
 
     <script src="lib/node_modules/angular/angular.min.js"></script>
     <script src="lib/node_modules/angular-route/angular-route.js"></script>
 
 
     <script src="app/app.js"></script>
-    <script src="app/factories/travelFactory.js"></script>
     <script src="app/controllers/travelCtrl.js"></script>
+    <script src="app/factories/travelFactory.js"></script>
 </body>
 </html>
